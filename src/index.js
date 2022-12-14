@@ -37,7 +37,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 //OP tutorial: https://www.w3schools.com/react/react_router.asp
-export default function Application(){
+export default function Application() {
   return (
     <BrowserRouter>
       <Routes>

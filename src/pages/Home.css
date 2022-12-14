@@ -31,3 +31,8 @@ body {
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(0 0 0.75rem rgb(165, 164, 164));
 }
+
+.catgrid{
+    margin-right: 0px;
+    margin-left: 0px;
+}
