@@ -1,0 +1,12 @@
+body {
+    font: 18px "Century Gothic", Futura, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+}
+
+.center{
+    display: block;
+    margin: auto;
+    text-align: center;
+}

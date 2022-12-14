@@ -1,0 +1,19 @@
+body {
+    font: 18px "Century Gothic", Futura, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+}
+
+.center{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.cards{
+    display: block;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 0.75rem rgb(165, 164, 164));
+}
