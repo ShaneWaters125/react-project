@@ -7,15 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Layout = () => {
   return (
     <>
-    <h1 className='title'>Catpedia, The best place to get cat pictures!</h1>
+    <h1 className='title'>Film Ratings</h1>
       <>
       <Navbar bg="dark" variant="dark">
           <Container>
-            {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/GenerateCats">Generate Cats</Nav.Link>
-              <Nav.Link href="/MoreCats">More Cats</Nav.Link>
+              <Nav.Link href="/" id="homenav">Home</Nav.Link>
+              <Nav.Link href="/test">Test</Nav.Link>
             </Nav>
           </Container>
         </Navbar>

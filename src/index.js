@@ -1,40 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM, { createRoot } from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Introduction from './Introduction';
-import Clock from './Clock';
-import TicTacToe from './TicTacToe';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import GenerateCats from "./pages/GenerateCats";
 import NoPage from "./pages/NoPage";
-import MoreCats from "./pages/MoreCats";
-
+import Films from './pages/Films';
+  
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-//Default Render
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-
-
-//Tutorial Render
-// root.render(
-//   <React.StrictMode>
-//     <Introduction />
-//     <Clock />
-//   </React.StrictMode>
-// )
-
-//TicTacToe
-// root.render(
-//   <TicTacToe />
-// )
 
 //OP tutorial: https://www.w3schools.com/react/react_router.asp
 export default function Application() {
@@ -43,9 +17,8 @@ export default function Application() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="generatecats" element={<GenerateCats />} />
-          <Route path="morecats" element={<MoreCats />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="film=:filmid" element={<Films />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -54,7 +27,10 @@ export default function Application() {
 
 // Website
 root.render(
-  <Application />
+  <React.StrictMode>
+    <Application />
+  </React.StrictMode>
+  
 )
 
 

@@ -1,4 +1,5 @@
-import './MoreCats.css';
+
+
 
 function NoPage(){
     return (

@@ -42,13 +42,13 @@ function Feeling() {
         <Card style={{ width: '18rem' }} className='cards'>
             <Card.Body>
                 <Card.Title className='center'>How are you feeling?</Card.Title>
-                <Card.Text className='center'>{feeling}</Card.Text>
+                <Card.Text className='center' id='feelingid'>{feeling}</Card.Text>
                 <form onChange={(e) => currentfeeling = e.target.value}>
                     <input type="radio" id="happy" name="feeling" value="Happy" /> Happy <br />
                     <input type="radio" id="mid" name="feeling" value="Mid" /> Mid <br />
                     <input type="radio" id="sad" name="feeling" value="Sad" /> Sad <br />
                 </form>
-                <Button variant="primary" className='center' onClick={() => setFeeling(currentfeeling)}>Submit</Button>
+                <Button variant="primary" className='center' id='feelingbtn' onClick={() => setFeeling(currentfeeling)}>Submit</Button>
             </Card.Body>
         </Card>
     );
@@ -71,7 +71,7 @@ function GridCard(props) {
 function CatGrid() {
     const cols = []
     for (let i = 0; i < catnames.length; i++) {
-        cols.push(<GridCard title={catnames[i]} url={caturls[i]} />)
+        cols.push(<GridCard key={"card" + i} title={catnames[i]} url={caturls[i]} />)
     }
     return (
         <Row xs={1} md={4} className="catgrid">
